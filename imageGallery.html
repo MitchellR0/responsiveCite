@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-imageGallery.css">
+
+    <link rel="shortcut icon" href="images/imageGallery/Logo_Black.webp" type="image/x-icon">
+
+    <title>Steve Lacy Image Gallery</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo-image.png" alt="Steve Lacy Image Gallery" title="Steve Lacy Image Gallery"></a>
+        <button id="displayMenu" data-visible="false"></button>
+        <nav id="navigation" data-visible="false">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="imagegallery.html">Image Gallery</a></li>
+                <li><a href="videogallery.html">Video Gallery</a></li>
+                <li><a href="slideshow.html">Slideshow</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Photo Grid -->
+        <div class="row"> 
+            <div class="column">
+                <img src="images/imageGallery/IMG_2996.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_2997.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_2998.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_2999.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_3001.JPG" style="width:100%">
+            </div>
+                
+            <div class="column">
+                <img src="images/imageGallery/IMG_3002.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_3003.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_3004.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_3005.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_3006.JPG" style="width:100%">
+            </div> 
+            
+            <div class="column">
+                <img src="images/imageGallery/IMG_3007.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_3008.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_3009.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_3010.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_3011.JPG" style="width:100%">
+            </div>
+            
+            <div class="column">
+                <img src="images/imageGallery/IMG_3012.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_3013.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_3014.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_3015.JPG" style="width:100%">
+                <img src="images/imageGallery/IMG_3016.JPG" style="width:100%">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright"></span> Mitchell R</p>
+
+        <!-- Javascript - Get Current Year for the Footer -->
+        <script>
+            window.onload = function() {
+                var d = new Date();
+                document.getElementById("copyright").innerHTML = d.getFullYear();
+            }
+        </script>
+
+    </footer>
+</body>
+</html>
